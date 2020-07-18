@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'discover2.dart';
+import 'bonuspage.dart';
 
 class Discover extends StatelessWidget {
   final controller = PageController(initialPage: 0);

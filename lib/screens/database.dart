@@ -15,3 +15,21 @@ const listdata=[
     "day" : "Tomorrow",
   }
 ];
+
+const listdata1=[
+  {
+    "img":"images/ayushimg.JPG",
+    "txt":"Ayushi liked your Post",
+    "on":"July 7"
+  },
+  {
+    "img":"images/face3.jpg",
+    "txt":"Jose liked your Post",
+    "on":"June 5"
+  },
+  {
+    "img":"images/face1.jpg",
+    "txt":"Trisha commented",
+    "on":"May 10"
+  }
+];
