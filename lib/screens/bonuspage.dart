@@ -53,10 +53,54 @@ class _LastPageState extends State<LastPage> {
     });
   }
 
+  List<Widget> itemsData2 = [];
+
+  void getPostsData2() {
+    List<dynamic> responseList2 = listdata2;
+    List<Widget> listItems2 = [];
+    responseList2.forEach((tag1) {
+      listItems2.add(Opacity(
+        opacity: 0.6,
+        child: Container(
+            height: 100,
+            //     width: 50,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+            ),
+            margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    child: Padding(
+                      padding: EdgeInsets.all(4),
+                      child: Image( image: AssetImage(tag1["itemimg"]),),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Text(tag1["title"],style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                  ),),
+                  SizedBox(height: 3),
+                  Text(tag1["subtitle"]),
+                ],
+              ),
+            )),
+      ));
+    });
+    setState(() {
+      itemsData2 = listItems2;
+    });
+  }
+
   @override
   void initState() {
     super.initState();
     getPostsData1();
+    getPostsData2();
   }
 
   @override
@@ -162,10 +206,16 @@ class _LastPageState extends State<LastPage> {
                               }
                           ),
                         ),
-                        Container(
-                          height: 50,
-                          color: Colors.black,
-                        )
+                        Expanded(
+                          child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: itemsData2.length,
+                              physics: BouncingScrollPhysics(),
+                              itemBuilder: (context, index) {
+                                return itemsData2[index];
+                              }
+                          ),
+                        ),
                       ],
                     ),
                   )

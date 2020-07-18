@@ -33,3 +33,20 @@ const listdata1=[
     "on":"May 10"
   }
 ];
+const listdata2=[
+  {
+    "itemimg":"images/lamp1.png",
+    "title" : "Stand Lamp",
+    "subtitle" : "16 left"
+  },
+  {
+    "itemimg":"images/chair1.png",
+    "title" : "Comfy Chair",
+    "subtitle" : "3 left"
+  },
+  {
+    "itemimg":"images/lamp2.png",
+    "title" : "Table Lamp",
+    "subtitle" : "5 left"
+  }
+];
