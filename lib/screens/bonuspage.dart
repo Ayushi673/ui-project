@@ -152,6 +152,7 @@ class _LastPageState extends State<LastPage> {
                             fontSize: 20,
                           ),
                         ),
+                        SizedBox(height: 15),
                         Expanded(
                           child: ListView.builder(
                               itemCount: itemsData1.length,
@@ -161,6 +162,10 @@ class _LastPageState extends State<LastPage> {
                               }
                           ),
                         ),
+                        Container(
+                          height: 50,
+                          color: Colors.black,
+                        )
                       ],
                     ),
                   )
