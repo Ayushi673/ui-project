@@ -1,16 +1,5 @@
 # onboardingui
 
-Multipage onboarding UI for an aplplication. Svg and image assets used and app has a splash screen. It also has seemless navigation between pages.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Task-4) Multipage onboarding UI for an application. Svg and image assets used and app has a splash screen. It also has seemless navigation between pages. 
+Task-3) Single Page scrollable list for Appointments where we can add new Appointments. All buttons and icons are functional,selected icons change color, color scheme followed, list builder implemented.
+Task-5) Multipage UI with touch swipeable screens, use of blur,stack, backdrop filter,has a functional like button. Clicking on the main card also navigates to the 'bonus' page.
