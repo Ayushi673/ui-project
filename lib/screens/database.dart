@@ -31,6 +31,11 @@ const listdata1=[
     "img":"images/face1.jpg",
     "txt":"Trisha commented",
     "on":"May 10"
+  },
+  {
+    "img":"images/face3.jpg",
+    "txt":"Jose commented",
+    "on":"May 10"
   }
 ];
 const listdata2=[

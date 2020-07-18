@@ -206,6 +206,14 @@ class _LastPageState extends State<LastPage> {
                               }
                           ),
                         ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(15, 8, 8, 10),
+                          child: Text('17 Matches',style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 17,
+                          ),),
+                        ),
                         Expanded(
                           child: ListView.builder(
                               scrollDirection: Axis.horizontal,

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:onboardingui/screens/deliverypage.dart';
 import 'discover2.dart';
 import 'bonuspage.dart';
 
@@ -15,6 +16,7 @@ class Discover extends StatelessWidget {
             Page1(),
             Page2(),
             LastPage(),
+            DeliveryPage(),
           ],
         ),
       ),
